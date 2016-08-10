@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "ukagaka timer event source",
   "keywords": [],
-  "main": "./es5/timer-event-source.js",
+  "main": "./es5/lib/timer-event-source.js",
   "scripts": {
     "test": "gulp test"
   },
