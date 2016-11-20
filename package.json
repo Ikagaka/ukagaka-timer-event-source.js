@@ -4,11 +4,13 @@
   "description": "ukagaka timer event source",
   "keywords": [],
   "main": "./es5/lib/timer-event-source.js",
+  "types": "./src/lib/timer-event-source.d.ts",
   "scripts": {
     "test": "gulp test"
   },
   "dependencies": {},
   "devDependencies": {
+    "@types/node": "^6.0.48",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
     "babel-eslint": "^6.1.2",
