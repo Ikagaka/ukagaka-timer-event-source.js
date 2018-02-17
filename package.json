@@ -1,6 +1,6 @@
 {
   "name": "ukagaka-timer-event-source",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ukagaka timer event source",
   "keywords": [],
   "main": "./dist/lib/ukagaka-timer-event-source.js",
