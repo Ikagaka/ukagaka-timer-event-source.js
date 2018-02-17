@@ -1,41 +1,29 @@
-require('babel-core/register');
+const path = require("path");
+const tsconfig = require("./tsconfig.json");
 
-import webpack from 'webpack';
-import path from 'path';
-
-export default {
-  devtool: 'source-map',
+module.exports = {
+  entry: {"ukagaka-timer-event-source": "./lib/ukagaka-timer-event-source.ts"},
+  output: {
+    library: "ukagakaTimerEventSource",
+    libraryTarget: "umd",
+    path: path.resolve("."),
+    filename: "dist/lib/[name].js",
+  },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.js$/,
-        loader: 'babel',
+        test: /\.ts$/,
+        loader: "ts-loader",
         exclude: /node_modules/,
-      },
-      {
-        test: /\.json$/,
-        loader: 'json',
+        options: {compilerOptions: tsconfig.compilerOptions},
       },
     ],
   },
-  entry: {
-    'timer-event-source': './src/lib/timer-event-source.js',
-  },
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
-    publicPath: '/web',
-    library: 'ukagakaTimerEventSource',
-    libraryTarget: 'var',
-  },
-  plugins: [
-    new webpack.optimize.DedupePlugin(),
-//    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.optimize.AggressiveMergingPlugin(),
-  ],
   resolve: {
-    alias: {
-      'eventEmitter/EventEmitter': 'wolfy87-eventemitter/EventEmitter',
-    },
+    extensions: [
+      ".ts",
+      ".js",
+    ],
   },
+  devtool: "source-map",
 };

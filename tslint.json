@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "tslint:all"
+    ],
+    "rules": {
+        "member-access": [
+            false
+        ],
+        "curly": false,
+        "object-literal-sort-keys": false,
+        "variable-name": [
+            true,
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ],
+        "typedef": false,
+        "no-magic-numbers": false,
+        "member-ordering": false,
+        "no-unsafe-any": false,
+        "completed-docs": false,
+        "no-void-expression": [
+            true,
+            "ignore-arrow-function-shorthand"
+        ]
+    }
+}
