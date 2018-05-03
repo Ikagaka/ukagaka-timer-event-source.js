@@ -8,7 +8,7 @@ import * as sinon from "sinon";
 /** @test {TimerEventSource} */
 describe("TimerEventSource", () => {
   let timer: sinon.SinonFakeTimers;
-  before(() => timer = sinon.useFakeTimers());
+  before(() => { timer = sinon.useFakeTimers(); });
   after(() => timer.restore());
 
   /** @test {GhostKernel#constructor} */
