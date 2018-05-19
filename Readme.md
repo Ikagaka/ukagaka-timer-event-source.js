@@ -1,5 +1,7 @@
 # [ukagaka-timer-event-source](https://github.com/Ikagaka/ukagaka-timer-event-source.js)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Ikagaka/ukagaka-timer-event-source.js.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/ukagaka-timer-event-source.svg)](https://www.npmjs.com/package/ukagaka-timer-event-source)
 [![npm license](https://img.shields.io/npm/l/ukagaka-timer-event-source.svg)](https://www.npmjs.com/package/ukagaka-timer-event-source)
 [![npm download total](https://img.shields.io/npm/dt/ukagaka-timer-event-source.svg)](https://www.npmjs.com/package/ukagaka-timer-event-source)
